@@ -29,5 +29,5 @@
         if (con != null) db.closeConnection(con);
     }
     
-    response.sendRedirect("my_alerts.jsp?deleted=1");
+    response.sendRedirect("browse_alerts.jsp?deleted=1");
 %>

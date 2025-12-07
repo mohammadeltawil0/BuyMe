@@ -105,7 +105,7 @@
     <% } %>
     
     <br>
-    <a href="ask_question.jsp">+ Ask New Question</a> | 
+    <a href="ask_question_form.jsp">+ Ask New Question</a> | 
     <a href="welcome_user.jsp">Back</a>
 </body>
 </html>

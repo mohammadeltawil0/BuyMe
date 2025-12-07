@@ -22,7 +22,7 @@
     <h3>Admin Abilities</h3>
     <ul>
     	<li><a href="create_rep.jsp">Create Customer Rep Account</a></li>
-        <li><a href="sales_report.jsp">View Sales Reports</a></li>
+        <li><a href="generate_sales_report.jsp">View Sales Reports</a></li>
     </ul>
     <a href="logout.jsp">Logout</a>
 </body>

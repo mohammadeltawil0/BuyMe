@@ -35,6 +35,13 @@
         }
         
         // Optional: Mark as read logic could be added here
+        String sqlMarkAsRead = "UPDATE Inbox SET is_read = TRUE WHERE user_id = ? AND is_read = FALSE";
+        PreparedStatement psMarkAsRead = con.prepareStatement(sqlMarkAsRead);
+        psMarkAsRead.setInt(1, userId);
+        psMarkAsRead.executeUpdate();
+        psMarkAsRead.close();
+        
+        
         
     } catch (Exception e) {
         out.println("Error loading messages: " + e.getMessage());

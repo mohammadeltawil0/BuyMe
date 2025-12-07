@@ -318,7 +318,7 @@
         </a>
     </p>
     <hr>
-
+	
     <!-- Detailed Price Info -->
     <h3>Current Bidding</h3>
     <p>
