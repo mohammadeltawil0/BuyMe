@@ -74,7 +74,9 @@
                     "JOIN SubCategory s ON a.subcat_id = s.subcat_id " +
                     "WHERE a.subcat_id = ? " +
                     "  AND a.auction_id <> ? " +
-                    "  AND a.close_time >= DATE_SUB(NOW(), INTERVAL 1 MONTH) ";
+                    "  AND a.close_time >= DATE_SUB(NOW(), INTERVAL 1 MONTH) "+
+                    "AND a.close_time <= NOW()";
+
 
     // Keyword filter
     if (!keyword.isEmpty()) sql += " AND a.item_name LIKE ? ";
